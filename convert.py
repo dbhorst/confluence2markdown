@@ -23,6 +23,16 @@ def getMarkdownFilename(filename):
         titleFilename = titleFilename.replace("_", "-")
         titleFilename = titleFilename.replace("---", "-")
         titleFilename = titleFilename.replace("--", "-")
+        titleFilename = titleFilename.replace(".", "-")
+        titleFilename = titleFilename.replace(":", "")
+        titleFilename = titleFilename.replace("*", "")
+        titleFilename = titleFilename.replace("<", "-")
+        titleFilename = titleFilename.replace(">", "-")
+        titleFilename = titleFilename.replace(",", "")
+        titleFilename = titleFilename.replace(";", "")
+        titleFilename = titleFilename.replace("?", "")
+        titleFilename = titleFilename.replace("\"", "")
+        titleFilename = titleFilename.replace("'", "")
        
         print("Renaming:", filename, " -> ", title, " -> ", titleFilename)
         return titleFilename
