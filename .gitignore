@@ -1,0 +1,25 @@
+# Python-generated files
+**/__pycache__
+**/.pytest_cache
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Local developer tools and notes
+local/
+ignore/
+.vscode/
+.idea/
+.spyproject
+
+# Virtual environments
+.venv
+
+# Files auto-created by operating system
+**/Thumbs.db
+**/.DS_Store
+
+export/
+converted/
